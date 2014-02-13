@@ -1,0 +1,15 @@
+<WebServices>
+  <WebService>
+    <ID>NWIS</ID>
+    <Type>WaterOneFlow1.0</Type>
+    <Description>
+    WaterOneFlow web service provided by the National Weather Information System.
+    </Description>
+    <Url>http://river.sdsc.edu/wateroneflow/NWIS/DailyValues.asmx</Url>
+    <ProcessingTime>0</ProcessingTime>
+    <MaxRequests>2</MaxRequests>
+    <Quantities>
+      <QuantityID>NWISDV:00060</QuantityID>
+    </Quantities>
+  </WebService>
+</WebServices>

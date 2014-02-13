@@ -1,0 +1,24 @@
+<ElementSets>
+  <ElementSet>
+    <ID>KansasGages</ID>
+    <Description>Stream gage locations in Kansas</Description>
+    <Kind>Point</Kind>
+    <Elements>
+      <Element>
+        <ID>NWISDV:06866500</ID>
+        <X>38.711111</X>
+        <Y>97.571389</Y>
+      </Element>
+      <Element>
+        <ID>NWISDV:06866900</ID>
+        <X>39.106111</X>
+        <Y>99.869722</Y>
+      </Element>
+      <Element>
+        <ID>NWISDV:06865500</ID>
+        <X>38.611389</X>
+        <Y>97.9525</Y>
+      </Element>
+    </Elements>
+  </ElementSet>
+</ElementSets>

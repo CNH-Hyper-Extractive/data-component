@@ -1,0 +1,26 @@
+﻿<Configuration>
+  <ExchangeItems>
+    <InputExchangeItem>
+      <ElementSetID>KansasGages</ElementSetID>
+      <Quantity>
+        <ID>InQuantityA</ID>
+      </Quantity>
+    </InputExchangeItem>
+    <OutputExchangeItem>
+      <ElementSetID>KansasGages</ElementSetID>
+      <Quantity>
+        <ID>NWISDV:00060</ID>
+      </Quantity>
+    </OutputExchangeItem>
+  </ExchangeItems>
+  <TimeHorizon>
+    <StartDateTime>2010-01-01T00:00:00</StartDateTime>
+    <EndDateTime>2110-01-01T00:00:00</EndDateTime>
+    <TimeStepInSeconds>86400</TimeStepInSeconds>
+  </TimeHorizon>
+  <ModelInfo>
+    <ID>DataComponent</ID>
+    <Description>DataComponent</Description>
+    <ProcessingTime>1</ProcessingTime>
+  </ModelInfo>
+</Configuration>

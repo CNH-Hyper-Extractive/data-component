@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F5CB9CCB-F86F-4107-A4BE-EB301BBA8DD2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KState.DataComponent</RootNamespace>
+    <AssemblyName>KState.DataComponent</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Hazelcast.Client">
+      <HintPath>..\Libs\Hazelcast.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Oatc.OpenMI.Sdk.Backbone">
+      <HintPath>..\Libs\Oatc.OpenMI.Sdk.Backbone.dll</HintPath>
+    </Reference>
+    <Reference Include="Oatc.OpenMI.Sdk.Buffer">
+      <HintPath>..\Libs\Oatc.OpenMI.Sdk.Buffer.dll</HintPath>
+    </Reference>
+    <Reference Include="Oatc.OpenMI.Sdk.DevelopmentSupport">
+      <HintPath>..\Libs\Oatc.OpenMI.Sdk.DevelopmentSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Oatc.OpenMI.Sdk.Spatial">
+      <HintPath>..\Libs\Oatc.OpenMI.Sdk.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="Oatc.OpenMI.Sdk.Wrapper">
+      <HintPath>..\Libs\Oatc.OpenMI.Sdk.Wrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenMI.Standard">
+      <HintPath>..\Libs\OpenMI.Standard.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CacheManager.cs" />
+    <Compile Include="DataComponent.cs" />
+    <Compile Include="DataInputLink.cs" />
+    <Compile Include="DataOutputLink.cs" />
+    <Compile Include="ElementSetEntry.cs" />
+    <Compile Include="Util\ByteUtil.cs" />
+    <Compile Include="Util\ComponentProperties.cs" />
+    <Compile Include="Util\ElementSetReader.cs" />
+    <Compile Include="Util\TraceFile.cs" />
+    <Compile Include="Util\Utils.cs" />
+    <Compile Include="PrefetchMonitor.cs" />
+    <Compile Include="MyTypeConverter.cs" />
+    <Compile Include="PrefetchManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Statistics.cs" />
+    <Compile Include="ValueSetEntry.cs" />
+    <Compile Include="ValueSetRequestEntry.cs" />
+    <Compile Include="WebServiceEntry.cs" />
+    <Compile Include="WebServiceManager.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>MKDIR "$(SolutionDir)..\Sample\Runtime\DataComponent"
+MKDIR "$(SolutionDir)..\Sample\Runtime\DataComponent\Assemblies"
+COPY "$(TargetDir)*.dll" "$(SolutionDir)..\Sample\Runtime\DataComponent\Assemblies"
+
+REM COPY "$(TargetDir)*.dll" "$(SolutionDir)..\..\LinkedModel\DSDataComponent\Assemblies"
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

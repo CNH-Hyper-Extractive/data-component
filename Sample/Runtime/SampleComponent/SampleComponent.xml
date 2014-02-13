@@ -1,0 +1,26 @@
+﻿<Configuration>
+  <ExchangeItems>
+    <InputExchangeItem>
+      <ElementSetID>KansasGages</ElementSetID>
+      <Quantity>
+        <ID>Discharge</ID>
+      </Quantity>
+    </InputExchangeItem>
+    <OutputExchangeItem>
+      <ElementSetID>KansasGages</ElementSetID>
+      <Quantity>
+        <ID>Discharge</ID>
+      </Quantity>
+    </OutputExchangeItem>
+  </ExchangeItems>
+  <TimeHorizon>
+    <StartDateTime>2014-01-01T00:00:00</StartDateTime>
+    <EndDateTime>2014-01-05T00:00:00</EndDateTime>
+    <TimeStepInSeconds>86400</TimeStepInSeconds>
+  </TimeHorizon>
+  <ModelInfo>
+    <ID>Sample</ID>
+    <Description>Sample</Description>
+    <ProcessingTime>1</ProcessingTime>
+  </ModelInfo>
+</Configuration>

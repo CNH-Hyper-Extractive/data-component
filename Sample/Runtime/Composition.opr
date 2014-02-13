@@ -1,0 +1,16 @@
+<guiComposition version="1.0">
+  <models>
+    <model omi="SampleComponent\SampleComponent.omi" rect_x="62" rect_y="48" rect_width="100" rect_height="51" />
+    <model omi="DataComponent\DataComponent.omi" rect_x="215" rect_y="49" rect_width="100" rect_height="51" />
+    <model omi="Oatc.OpenMI.Gui.Trigger" rect_x="63" rect_y="139" rect_width="100" rect_height="51" />
+  </models>
+  <links>
+    <uilink model_providing="DataComponent" model_accepting="Sample">
+      <link id="2" source_elementset="KansasGages" source_quantity="NWISDV:00060" target_elementset="KansasGages" target_quantity="Discharge" />
+    </uilink>
+    <uilink model_providing="Sample" model_accepting="Oatc.OpenMI.Gui.Trigger">
+      <link id="4" source_elementset="KansasGages" source_quantity="Discharge" target_elementset="TriggerElementID" target_quantity="TriggerQuantityID" />
+    </uilink>
+  </links>
+  <runproperties listenedeventtypes="11111111111" triggerinvoke="01/05/2014 00:00:00" runinsamethread="0" showeventsinlistbox="1" logfilename="CompositionRun.log" />
+</guiComposition>

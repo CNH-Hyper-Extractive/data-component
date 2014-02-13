@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DataStore:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DataStore_jar</output-path>
+    <root id="archive" name="DataStore.jar">
+      <element id="module-output" name="DataStore" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/hazelcast-2.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

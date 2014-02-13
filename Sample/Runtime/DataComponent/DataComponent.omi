@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinkableComponent Type="KState.DataComponent.DataComponent" Assembly="Assemblies/KState.DataComponent.dll">
+  <Arguments>
+    <Argument Key="param_config_file" ReadOnly="true" Value="./DataComponent.xml" />
+    <Argument Key="param_instance_address" ReadOnly="true" Value="10.0.0.10" />
+    <Argument Key="param_instance_assignment" ReadOnly="true" Value="0" />
+    <Argument Key="param_enable_prefetching" ReadOnly="true" Value="false" />
+    <Argument Key="param_composition_id" ReadOnly="true" Value="0" />
+    <Argument Key="param_per_id" ReadOnly="true" Value="0" />
+  </Arguments>
+</LinkableComponent>
