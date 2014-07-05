@@ -9,7 +9,7 @@ Data management is a fundamental part of modeling and simulation. Traditional ap
 
 ### references
 
-Bulatewicz, T., D. Andresen, S. Auvenshine, J. Peterson, and D. R. Steward. 2014. A distributed data component for the Open Modeling Interface. Environmental Modelling & Software. in review.
+Bulatewicz, T., D. Andresen, S. Auvenshine, J. Peterson, D.R. Steward, A distributed data component for the Open Modeling Interface, Environmental Modelling & Software, Volume 57, July 2014, Pages 138-151, ISSN 1364-8152. http://www.sciencedirect.com/science/article/pii/S1364815214000772
 
 Bulatewicz, T. and D. Andresen. 2012. Efficient data collection from Open Modeling Interface (OpenMI) components. In: Proceedings of the International Conference on Parallel and Distributed Processing Techniques and Applications (PDPTA) Volume 1, ed. H. R. Arabnia, CSREA Press, Las Vegas, Nevada, USA, July 16-19. 53–59. https://krex.k-state.edu/dspace/handle/2097/15197
 
